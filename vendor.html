@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Form</title>
+    <style>
+        body
+        {
+            background-color: rgb(196, 241, 241);
+        }
+        div
+        {
+            box-shadow: 5px 5px 5px 5px gray;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-bottom: 200px;
+            height: 680px;
+            padding: 20px;
+            background-color: rgb(240, 197, 239);
+        }
+        input
+        {
+            font-size: large;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 450px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+        form
+        {
+            font-size: x-large;
+        }
+        div h1
+        {
+           text-align: center; 
+           color: rgb(103, 103, 254);
+        }
+        div p
+        {
+            color: rgb(116, 119, 121);
+            text-align: center;
+            font-size: large;
+        }
+        button
+        {
+            margin-top: 10px;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            width: 450px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>TECHSTORE</h1>
+        <p>Vendor Registration Portal</p>
+        <form>
+            <label>Vendor Name</label><br>
+            <input type="text" placeholder="Enter Vendor Name"><br>
+            <label>Password</label><br>
+            <input type="password"  placeholder="Enter Password"><br>
+            <label>Business Email</label><br>
+            <input type="text" placeholder="Enter Business Email"><br>
+            <label>Company Website</label><br>
+            <input type="text" placeholder="https://example.com"><br>
+            <label>Search Products</label><br>
+            <input type="text" placeholder="Search Products" list="data">
+            <datalist id="data">
+                <option>Mobiles</option>
+                <option>Laptops</option>
+                <option>Iphone</option>
+                <option>HeadPhones</option>
+                <option>Gaming</option>
+                <option>Accessories</option>
+            </datalist>
+            <br>
+            <label>Quantity</label><br>
+            <input type="text" name="Quantity" value="1"><br>
+            <label>Vendor Id</label><br>
+            <input type="text" name="Quantity" value="TV1024" readonly><br>
+            <label>GST Number</label><br>
+            <input type="text" name="Quantity" value="29ABCDE1234F1Z5" readonly><br>
+            <button>Redister Vendor</button> 
+        </form>
+    </div>
+</body>
+</html>
