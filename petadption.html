@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body
+        {
+            background-color: rgb(220, 230, 230);
+            display: flex;
+            flex-direction: row;
+        }
+        img
+        {
+            height: 300px;
+            width: 300px;
+        }
+        .puppy
+        {
+
+            margin-left: 300px;
+            text-align: center;
+            color: white;
+            border-radius: 5px 5px;
+            background-color: rgba(244, 114, 49, 0.932);
+        }
+        div
+        {
+            box-shadow: 5px 5px 5px 5px gray;
+            margin-top: 20px;
+            margin-bottom: 200px;
+            height: 680px;
+            border-radius: 5px 5px;
+            padding: 20px;
+            background-color: white;
+        }
+        input
+        {
+            margin-top: 5px;
+            font-size: large;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 400px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+        form
+        {
+            font-size: x-large;
+        }
+        div h1
+        {
+           text-align: center; 
+           color: rgb(138, 141, 137);
+        }
+
+        button
+        {
+            margin-top: 10px;
+            background-color: rgb(234, 111, 10);
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            width: 450px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="puppy">
+        <img src="../images/petadaption.png">
+        <h1>🐾 HAPPY PAWS</h1>
+        <p>Find Your Forever Friend ❤️</p>
+        <p>Love • Care • Adopt</p>
+
+    </div>
+    <div>
+        <h1>Pet Adoption Registration</h1>
+        <form>
+            <label>Adopter Name</label><br>
+            <input type="text" placeholder="Enter Adopter Name"><br>
+            <label>Create Password</label><br>
+            <input type="password"  placeholder="Create Password"><br>
+            <label>Email Address</label><br>
+            <input type="text" placeholder="Enter Email"><br>
+            <label>Instagram Profile</label><br>
+            <input type="text" placeholder="https://instagram.com/username"><br>
+            <label>Preferred Pet</label><br>
+            <input type="text" placeholder="Search Your Pet" list="data">
+            <datalist id="data">
+                <option>Golden Retriever</option>
+                <option>Labrador</option>
+                <option>Beagle</option>
+                <option>German Shepherd</option>
+                <option>Persian Cat</option>
+                <option>Rabbit</option>
+            </datalist>
+            <br>
+            <label>Home Size (Sq.ft)</label><br>
+            <input type="text" value="8000"><br>
+            <label>Application Id</label><br>
+            <input type="text"  value="ADP2026" readonly><br>
+            <label>Application Status</label><br>
+            <input type="text"  value="Pending Verification" readonly><br>
+            <button> 🐾 Adopt Now</button> 
+        </form>
+    </div>
+</body>
+</html>
