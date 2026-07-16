@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space camp</title>
+    <style>
+        body{
+            margin-left:300px;
+            margin-right: 300px;
+            border:1px solid black;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: rgb(211, 218, 218);
+        }
+        div
+        {
+            padding-top: 20px;
+            border-radius: 10px;
+            background-color: rgb(94, 144, 243);
+        }
+        .main{
+            font-size: 20px;
+            text-align: center;
+        }
+        div img{
+            width: 910px;
+            height: 300px;
+        }
+        .item1
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            justify-content: space-between;
+            gap:20px;
+            justify-content: center;
+        }
+        .item2
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            justify-content: space-between;
+            gap:20px;
+            justify-content: center;
+        }
+        .item3
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            width: 800;
+            gap: 30px;
+            justify-content: center;
+        }
+        .item4
+        {
+            font-size: 25px;
+            width: 800px;
+            margin-left: 30px;
+        }
+        .item5
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            gap:30px;
+            justify-content: center;
+        }
+        .item6
+        {
+            font-size: 25px;
+            width: 700px;
+            margin: 5px;
+        }
+        .item7
+        {
+            font-size: 25px;
+            margin-left: 30px;
+            justify-content: center;
+        }
+        .item8
+        {
+            font-size: 25px;
+            margin-left: 30px;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px; 
+        }
+        button
+        {
+            text-align: center;
+            width: 850px;
+            height: 50px;
+            margin: 5px;
+            margin-left: 30px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            background-color: rgb(244, 59, 204);
+        }
+        input
+        {
+            font-size: 20px;
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            
+        }
+        textarea
+        {
+            width:850px;
+            margin-left: 30px;
+            height:120px;
+            font-size:18px;
+            border-radius:10px;
+        }
+        meter
+        {
+            width: 800px;
+            margin-left: 30px;
+            height: 20px;
+            font-size:18px;
+            border-radius: 50px;
+        }
+        .idCard-input
+        {
+            border: 5px solid black;
+        }
+        .briefing-input
+        {
+            width:850px;
+            height:40px;
+            font-size:20px;
+            border-radius:10px;
+        }
+        input[type="color"]
+        {
+            width:400px;
+            height:18px;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="main">
+        <h1>🚀 SPACE CAMP</h1>
+        <p>Reach Beyond the Stars • Train Like an Astronaut</p>
+    </div>
+    <div>
+        <img src="../images/space.png">
+    </div>
+    <div>
+        <h1>Explorer Registration Form</h1>
+        <form>
+            <div class="item1">
+                <div>
+                    <label for="Explorer Name">Explorer Name</label><br>
+                    <input type="text" placeholder="Enter Explorer Name"><br>
+                </div>
+                <div>
+                    <label for="Password">Password</label><br>
+                    <input type="password" placeholder="create Password"><br>
+                </div>
+            </div>
+            <div class="item2">
+                <div>
+                    <label for="Age">Age</label><br>
+                    <input type="number" value="18"><br>
+                </div>
+                <div>
+                    <label for="Fitness Score">Fitness Score</label><br>
+                    <input type="range"><br>
+                </div>
+            </div>
+            <div class="item3">
+                <div>
+                    <label for="Camp Date">Camp Date</label>
+                    <br>
+                    <input type="date"><br>
+                </div>
+                <div>
+                    <label for="Reporting Time">Reporting Time</label><br>
+                    <input type="time"><br>
+                </div>
+            </div>
+            <div class="item4">
+                <label for="briefing">Mission Briefing</label><br>
+                <input type="datetime-local" id="briefing" class="briefing-input"><br>
+            </div>
+            <div class="item5">
+                <div>
+                    <label for="Preferred Suit Color">Preferred Suit Color</label><br>
+                    <input type="color"><br>
+                </div>
+                <div class="file">
+                    <label for="idCard">Upload ID Card</label><br>
+                    <input type="file" name="No file choosen" id="idCard" accept=".jpg,.pdf,.png"><br>
+                </div>
+            </div>
+            <div class="item6">
+                <label for="Why do you want to become an Astronaut?" style="margin-left: 30px;">Why do you want to become an Astronaut?</label><br>
+                <textarea type="text" placeholder="Write your answer here..."></textarea>
+            </div>
+            <div class="item7">
+                <label for="Medical Fitness">Medical Fitness</label><br>
+                <meter min="1" max="100" value="90" low="30" high="80"></meter>
+            </div>
+            <div class="item8"> 
+                <label for="Registration Progress">Registration Progress</label><br>
+                <meter min="1" max="100" value="30"></meter>
+            </div>
+            <button>🚀 Register Mission</button>
+        </form>
+    </div>
+</div>   
+</body>
+</html>
